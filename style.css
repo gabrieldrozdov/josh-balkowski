@@ -1,0 +1,102 @@
+/* Fonts */
+@font-face {
+	font-family: "Founders Grotesk";
+	src: url("/assets/fonts/founders-grotesk-regular.woff2");
+	font-weight: normal;
+}
+@font-face {
+	font-family: "Founders Grotesk";
+	src: url("/assets/fonts/founders-grotesk-medium.woff2");
+	font-weight: bold;
+}
+@font-face {
+	font-family: "Inter";
+	src: url("/assets/fonts/Inter-VariableFont_opsz\,wght.ttf");
+	font-weight: 100 900;
+	font-style: normal;
+}
+@font-face {
+	font-family: "Inter";
+	src: url("/assets/fonts/Inter-Italic-VariableFont_opsz\,wght.ttf");
+	font-weight: 100 900;
+	font-style: italic;
+}
+
+/* Base styles */
+:root {
+	--primary: #0f0f0f;
+	--secondary: #FBF4F4;
+}
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body {
+	background-color: var(--secondary);
+	color: var(--primary);
+	font-family: "Inter", sans-serif;
+	font-size: 14px;
+	font-weight: 400;
+	font-variation-settings: "wght" 400, "opsz" 14.0;
+}
+
+.home {
+	position: relative;
+	height: 100dvh;
+	background-color: var(--primary);
+}
+.logo {
+	position: fixed;
+	top: 15px;
+	left: 20px;
+	font-size: 14px;
+	color: var(--secondary);
+	mix-blend-mode: exclusion;
+	text-decoration: none;
+	font-weight: 500;
+	font-variation-settings: "wght" 500, "opsz" 14.0;
+}
+.logo h1 {
+	font: inherit;
+}
+.nav {
+	position: fixed;
+	top: 15px;
+	right: 20px;
+	display: flex;
+	gap: 20px;
+}
+.nav a {
+	font: inherit;
+	color: var(--secondary);
+	mix-blend-mode: exclusion;
+	text-decoration: none;
+	font-weight: 500;
+	font-variation-settings: "wght" 500, "opsz" 14.0;
+}
+.nav a:hover {
+	font-style: italic;
+}
+.nav a[data-active="1"] {
+	text-decoration: underline;
+	font-style: italic;
+}
+.mode-toggle {
+	border: unset;
+	position: fixed;
+	border-radius: 50%;
+	width: 20px;
+	height: 20px;
+	background-color: var(--secondary);
+	bottom: 20px;
+	left: 20px;
+	cursor: pointer;
+}
+.copyright {
+	position: fixed;
+	color: var(--secondary);
+	mix-blend-mode: exclusion;
+	bottom: 15px;
+	right: 20px;
+}

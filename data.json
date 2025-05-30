@@ -1,0 +1,575 @@
+[
+	{
+		"slug": "please-keep-well",
+		"client": "Please Keep Well",
+		"project": "T-Shirts",
+		"year": "2025",
+		"heading": "A second life looks good on you.",
+		"links": {},
+		"desc": "Please Keep Well started with the goal of repurposing—giving thrifted pots a new, reusable life as homes for Ben’s homegrown plants. Their first run of merch follows the brands environmentally conscious perspective. Each design blends Ben’s hand-drawn sketches with repurposed content from their Instagram. A loud bark, with absolutely no bite, all designs will be screen-printed in limited runs (on thrifted tees, of course)—some day soon.",
+		"services": [
+			"Apparel Design"
+		],
+		"credits": {
+			"Collaboration": [
+				"Benjamin Badiuk"
+			]
+		},
+		"hero-desktop": {
+			"image": "/assets/media/pkw-hero.jpg",
+			"video": ""
+		},
+		"hero-mobile": {
+			"image": "/assets/media/pkw-hero.jpg",
+			"video": ""
+		},
+		"primary-color": "#0F0F0F",
+		"secondary-color": "#FBF4F4",
+		"media": [
+			[
+				{
+					"image-normal": "/assets/media/pkw-tshirt-wiper-01.jpg",
+					"image-hover": "/assets/media/pkw-tshirt-wiper-02.jpg",
+					"video": "",
+					"alt-text": "",
+					"desktop": true,
+					"mobile": true
+				},
+				{
+					"image-normal": "/assets/media/pkw-tshirt-back-01.jpg",
+					"image-hover": "/assets/media/pkw-tshirt-back-02.jpg",
+					"video": "",
+					"alt-text": "",
+					"desktop": true,
+					"mobile": true
+				}
+			],
+			[
+				{
+					"image-normal": "/assets/media/pkw-tshirt-wall-01.jpg",
+					"image-hover": "/assets/media/pkw-tshirt-wall-02.jpg",
+					"video": "",
+					"alt-text": "",
+					"desktop": true,
+					"mobile": true
+				}
+			],
+			[
+				{
+					"image-normal": "/assets/media/pkw-tshirt-top-01.jpg",
+					"image-hover": "/assets/media/pkw-tshirt-top-02.jpg",
+					"video": "",
+					"alt-text": "",
+					"desktop": true,
+					"mobile": true
+				},
+				{
+					"image-normal": "/assets/media/pkw-tshirt-car-01.jpg",
+					"image-hover": "/assets/media/pkw-tshirt-car-02.jpg",
+					"video": "",
+					"alt-text": "",
+					"desktop": true,
+					"mobile": true
+				}
+			],
+			[
+				{
+					"image-normal": "/assets/media/pkw-tshirt-cacti-01.jpg",
+					"image-hover": "/assets/media/pkw-tshirt-cacti-02.jpg",
+					"video": "",
+					"alt-text": "",
+					"desktop": true,
+					"mobile": true
+				}
+			]
+		]
+	},
+	{
+		"slug": "the-butter-experience",
+		"client": "The Butter Experience",
+		"project": "Butter",
+		"year": "2024",
+		"heading": "Designed for the moment, made for the table.",
+		"links": {
+			"Live Site": "https://url.com"
+		},
+		"desc": "Butter is all about bringing restaurant-quality dining into the home with an intimate, elevated experience built around warmth, craftsmanship, and connection. Through refined branding, art direction, and photography, a visual language was crafted that feels both inviting and elevated. A minimalist logo, typography, and colour palette set the tone, while photography captured the “I want an invite!” energy. The website was designed as a seamless extension of the experience, alongside supporting collateral like business cards and pricing sheets to keep the brand cohesive at every touchpoint.",
+		"services": [
+			"Brand Identity",
+			"Art Direction",
+			"Photography",
+			"Web Design"
+		],
+		"credits": {},
+		"hero-desktop": {
+			"image": "/assets/media/butter-hero.jpg",
+			"video": ""
+		},
+		"hero-mobile": {
+			"image": "/assets/media/butter-hero.jpg",
+			"video": ""
+		},
+		"primary-color": "#0F0F0F",
+		"secondary-color": "#FBF4F4",
+		"media": [
+			[
+				{
+					"image-normal": "/assets/media/butter-laptop.jpg",
+					"image-hover": "",
+					"video": "/assets/media/butter-laptop.mp4",
+					"alt-text": "",
+					"desktop": true,
+					"mobile": true
+				}
+			],
+			[
+				{
+					"image-normal": "/assets/media/butter-model1.jpg",
+					"image-hover": "",
+					"video": "",
+					"alt-text": "",
+					"desktop": true,
+					"mobile": false
+				},
+				{
+					"image-normal": "/assets/media/butter-model2.jpg",
+					"image-hover": "",
+					"video": "/assets/media/butter-laptop.mp4",
+					"alt-text": "",
+					"desktop": true,
+					"mobile": false
+				},
+				{
+					"image-normal": "/assets/media/butter-model3.jpg",
+					"image-hover": "",
+					"video": "",
+					"alt-text": "",
+					"desktop": true,
+					"mobile": false
+				},
+				{
+					"image-normal": "/assets/media/butter-model4.jpg",
+					"image-hover": "",
+					"video": "",
+					"alt-text": "",
+					"desktop": true,
+					"mobile": false
+				},
+				{
+					"image-normal": "/assets/media/butter-model-all.gif",
+					"image-hover": "",
+					"video": "",
+					"alt-text": "",
+					"desktop": false,
+					"mobile": true
+				}
+			],
+			[
+				{
+					"image-normal": "/assets/media/butter-knife.gif",
+					"image-hover": "",
+					"video": "",
+					"alt-text": "",
+					"desktop": true,
+					"mobile": true
+				},
+				{
+					"image-normal": "/assets/media/butter-logo-01.jpg",
+					"image-hover": "/assets/media/butter-logo-02.jpg",
+					"video": "",
+					"alt-text": "",
+					"desktop": true,
+					"mobile": true
+				}
+			],
+			[
+				{
+					"image-normal": "/assets/media/butter-model.jpg",
+					"image-hover": "",
+					"video": "",
+					"alt-text": "",
+					"desktop": true,
+					"mobile": true
+				},
+				{
+					"image-normal": "/assets/media/butter-phone.jpg",
+					"image-hover": "",
+					"video": "/assets/media/butter-phone.mp4",
+					"alt-text": "",
+					"desktop": true,
+					"mobile": true
+				}
+			],
+			[
+				{
+					"image-normal": "/assets/media/butter-menu.jpg",
+					"image-hover": "",
+					"video": "",
+					"alt-text": "",
+					"desktop": true,
+					"mobile": true
+				}
+			]
+		]
+	},
+	{
+		"slug": "skin-and-bones",
+		"client": "Skin & Bones",
+		"project": "Valentine Matchboxes",
+		"year": "2023",
+		"heading": "Spark it.",
+		"links": {
+			"Live Site": "https://url.com"
+		},
+		"desc": "What better way to keep the spark alive? A playful take on Valentine’s Day tokens of appreciation, these custom matchboxes were designed as a gift for Skin and Bones' clients. Created as a series of eight playful variations, each box leaned into humour, nostalgia, and wordplay fitting for the holiday.",
+		"services": [
+			"Packaging Design"
+		],
+		"credits": {
+			"Illustration": [
+				"Andrew Watch"
+			]
+		},
+		"hero-desktop": {
+			"image": "/assets/media/skinandbones-hero.jpg",
+			"video": ""
+		},
+		"hero-mobile": {
+			"image": "/assets/media/skinandbones-hero.jpg",
+			"video": ""
+		},
+		"primary-color": "#0F0F0F",
+		"secondary-color": "#FBF4F4",
+		"media": [
+			[
+				{
+					"image-normal": "/assets/media/skinandbones-bread.gif",
+					"image-hover": "",
+					"video": "",
+					"alt-text": "",
+					"desktop": true,
+					"mobile": true
+				},
+				{
+					"image-normal": "/assets/media/skinandbones-heart.gif",
+					"image-hover": "",
+					"video": "",
+					"alt-text": "",
+					"desktop": true,
+					"mobile": true
+				}
+			],
+			[
+				{
+					"image-normal": "/assets/media/skinandbones-beer.gif",
+					"image-hover": "",
+					"video": "",
+					"alt-text": "",
+					"desktop": true,
+					"mobile": true
+				},
+				{
+					"image-normal": "/assets/media/skinandbones-car.gif",
+					"image-hover": "",
+					"video": "",
+					"alt-text": "",
+					"desktop": true,
+					"mobile": true
+				}
+			],
+			[
+				{
+					"image-normal": "/assets/media/skinandbones-basketball.gif",
+					"image-hover": "",
+					"video": "",
+					"alt-text": "",
+					"desktop": true,
+					"mobile": true
+				},
+				{
+					"image-normal": "/assets/media/skinandbones-coffee.gif",
+					"image-hover": "",
+					"video": "",
+					"alt-text": "",
+					"desktop": true,
+					"mobile": true
+				}
+			],
+			[
+				{
+					"image-normal": "/assets/media/skinandbones-shoe.gif",
+					"image-hover": "",
+					"video": "",
+					"alt-text": "",
+					"desktop": true,
+					"mobile": true
+				},
+				{
+					"image-normal": "/assets/media/skinandbones-tabasco.gif",
+					"image-hover": "",
+					"video": "",
+					"alt-text": "",
+					"desktop": true,
+					"mobile": true
+				}
+			]
+		]
+	},
+	{
+		"slug": "sharpie",
+		"client": "Sharpie",
+		"project": "Permanent Change",
+		"year": "2023",
+		"heading": "Change starts in ink.",
+		"links": {},
+		"desc": "The Permanent Change campaign highlights the power of Sharpie as a tool for activism—where bold ideas take shape and lasting change begins. By focusing on absence, the campaign underscored Sharpie’s historical role in protest and social movements, reinforcing the idea that  messages that shape history are often written in permanent ink. Through a visual and conceptual connection between social justice and self-expression, the campaign positioned Sharpie not just as a marker, but as a symbol of resistance, advocacy, and transformation.",
+		"services": [
+			"Art Direction",
+			"Design"
+		],
+		"credits": {},
+		"hero-desktop": {
+			"image": "/assets/media/sharpie-hero.jpg",
+			"video": ""
+		},
+		"hero-mobile": {
+			"image": "/assets/media/sharpie-hero.jpg",
+			"video": ""
+		},
+		"primary-color": "#0F0F0F",
+		"secondary-color": "#FBF4F4",
+		"media": [
+			[
+				{
+					"image-normal": "/assets/media/sharpie-window.jpg",
+					"image-hover": "",
+					"video": "",
+					"alt-text": "",
+					"desktop": true,
+					"mobile": true
+				},
+				{
+					"image-normal": "/assets/media/sharpie-wall.jpg",
+					"image-hover": "",
+					"video": "",
+					"alt-text": "",
+					"desktop": true,
+					"mobile": true
+				}
+			],
+			[
+				{
+					"image-normal": "/assets/media/sharpie-billboard.jpg",
+					"image-hover": "",
+					"video": "",
+					"alt-text": "",
+					"desktop": true,
+					"mobile": true
+				}
+			],
+			[
+				{
+					"image-normal": "/assets/media/sharpie-columns.jpg",
+					"image-hover": "",
+					"video": "",
+					"alt-text": "",
+					"desktop": true,
+					"mobile": true
+				},
+				{
+					"image-normal": "/assets/media/sharpie-poster.jpg",
+					"image-hover": "",
+					"video": "",
+					"alt-text": "",
+					"desktop": true,
+					"mobile": true
+				}
+			]
+		]
+	},
+	{
+		"slug": "jack-and-jill-health",
+		"client": "Jack & Jill Health",
+		"project": "Medical Packaging",
+		"year": "2023",
+		"heading": "Medical, made personal.",
+		"links": {},
+		"desc": "Jack & Jill reimagined medical packaging for the direct-to-consumer space—balancing regulatory constraints with an inviting, user-friendly design. For both brands, the goal was the same: to soften the clinical, elevate the everyday, and create an unboxing experience that felt as considered as the care inside.",
+		"services": [
+			"Branding",
+			"Packaging Design"
+		],
+		"credits": {},
+		"hero-desktop": {
+			"image": "/assets/media/jack-and-jill-hero.jpg",
+			"video": ""
+		},
+		"hero-mobile": {
+			"image": "/assets/media/jack-and-jill-hero.jpg",
+			"video": ""
+		},
+		"primary-color": "#0F0F0F",
+		"secondary-color": "#FBF4F4",
+		"media": [
+			[
+				{
+					"image-normal": "/assets/media/jack-and-jill-spray.jpg",
+					"image-hover": "",
+					"video": "",
+					"alt-text": "",
+					"desktop": true,
+					"mobile": true
+				},
+				{
+					"image-normal": "/assets/media/jack-and-jill-dropper-trio.jpg",
+					"image-hover": "",
+					"video": "",
+					"alt-text": "",
+					"desktop": true,
+					"mobile": true
+				}
+			],
+			[
+				{
+					"image-normal": "/assets/media/jack-and-jill-spray-trio.jpg",
+					"image-hover": "",
+					"video": "",
+					"alt-text": "",
+					"desktop": true,
+					"mobile": true
+				},
+				{
+					"image-normal": "/assets/media/jack-and-jill-box-purple.jpg",
+					"image-hover": "",
+					"video": "",
+					"alt-text": "",
+					"desktop": true,
+					"mobile": true
+				}
+			],
+			[
+				{
+					"image-normal": "/assets/media/jack-and-jill-box-blue.jpg",
+					"image-hover": "",
+					"video": "",
+					"alt-text": "",
+					"desktop": true,
+					"mobile": true
+				},
+				{
+					"image-normal": "/assets/media/jack-and-jill-various.jpg",
+					"image-hover": "",
+					"video": "",
+					"alt-text": "",
+					"desktop": true,
+					"mobile": true
+				}
+			]
+		]
+	},
+	{
+		"slug": "sampled-work",
+		"client": "(Various)",
+		"project": "Sampled Work",
+		"year": "2022 – 2025",
+		"heading": "Treatments that make the cut.",
+		"links": {},
+		"desc": "Treatments are where ideas take shape—bridging the gap between concept, written, and visual references. This collection showcases a range of visual approaches, each tailored to elevate the director’s vision and bring a pitch to life. Every treatment is designed to captivate, clarify, and sell the story before a single frame is shot. Get in touch for full inDesign links, happy to share if you want to see more!",
+		"services": [
+			"Treatment Design"
+		],
+		"credits": {},
+		"hero-desktop": {
+			"image": "/assets/media/various-hero.jpg",
+			"video": "/assets/media/various-hero.mp4"
+		},
+		"hero-mobile": {
+			"image": "/assets/media/various-hero.jpg",
+			"video": "/assets/media/various-hero.mp4"
+		},
+		"primary-color": "#0F0F0F",
+		"secondary-color": "#FBF4F4",
+		"media": [
+			[
+				{
+					"image-normal": "/assets/media/various-kitkat.jpg",
+					"image-hover": "",
+					"video": "/assets/media/various-kitkat.mp4",
+					"alt-text": "",
+					"desktop": true,
+					"mobile": true
+				}
+			],
+			[
+				{
+					"image-normal": "/assets/media/various-maddies-story.jpg",
+					"image-hover": "",
+					"video": "/assets/media/various-maddies-story.mp4",
+					"alt-text": "",
+					"desktop": true,
+					"mobile": true
+				}
+			],
+			[
+				{
+					"image-normal": "/assets/media/various-itch.jpg",
+					"image-hover": "",
+					"video": "/assets/media/various-itch.mp4",
+					"alt-text": "",
+					"desktop": true,
+					"mobile": true
+				}
+			],
+			[
+				{
+					"image-normal": "/assets/media/various-venmo.jpg",
+					"image-hover": "",
+					"video": "/assets/media/various-venmo.mp4",
+					"alt-text": "",
+					"desktop": true,
+					"mobile": true
+				}
+			],
+			[
+				{
+					"image-normal": "/assets/media/various-bronco.jpg",
+					"image-hover": "",
+					"video": "/assets/media/various-bronco.mp4",
+					"alt-text": "",
+					"desktop": true,
+					"mobile": true
+				}
+			],
+			[
+				{
+					"image-normal": "/assets/media/various-spindrift.jpg",
+					"image-hover": "",
+					"video": "/assets/media/various-spindrift.mp4",
+					"alt-text": "",
+					"desktop": true,
+					"mobile": true
+				}
+			],
+			[
+				{
+					"image-normal": "/assets/media/various-dink-dunk.jpg",
+					"image-hover": "",
+					"video": "/assets/media/various-dink-dunk.mp4",
+					"alt-text": "",
+					"desktop": true,
+					"mobile": true
+				}
+			],
+			[
+				{
+					"image-normal": "/assets/media/various-nfl.jpg",
+					"image-hover": "",
+					"video": "/assets/media/various-nfl.mp4",
+					"alt-text": "",
+					"desktop": true,
+					"mobile": true
+				}
+			]
+		]
+	}
+]
