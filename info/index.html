@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Josh Balkowski | Info</title>
+	<link rel="stylesheet" href="/style.css">
+</head>
+<body class="light">
+	<div class="info">
+		<a href="/" class="logo"><h1>Josh Balkowski</h1></a>
+		<nav class="nav">
+			<a href="/work">Work</a>
+			<a href="/info" data-active="1">Info</a>
+		</nav>
+		<button class="mode-toggle mode-toggle-alt" onclick="toggleMode();"></button>
+		<p class="copyright">© 2025</p>
+
+		<main class="info-main">
+			<h1 class="info-main-desc">
+				<strong>Josh Balkowski is a Toronto based Art Director and Designer.</strong>
+				<span class="info-main-desc-desktop">Focusing on a strategy-informed creative approach, his work bridges intention and outcome—ensuring that every project delivers thoughtful and impactful results to brands, and their audiences.</span>
+			</h1>
+			<button class="info-main-email" onclick="copyEmail();">
+				<span>joshbalkowski@gmail.com</span>
+				<svg viewBox="0 0 29 29">
+					<path class="cls-2" d="M20.99,6h-8c-1.1,0-2,.9-2,2v2h-3c-1.1,0-2,.9-2,2v9c0,1.1.9,2,2,2h8c1.1,0,2-.9,2-2v-2h3c1.1,0,2-.9,2-2v-9c0-1.1-.9-2-2-2ZM15.99,21H7.99v-9s0,0,0,0h8v9ZM20.99,17h-3v-5c0-1.1-.9-2-2-2h-3v-2s0,0,0,0h8v9Z"/>
+				</svg>
+			</button>
+			<button class="info-main-desc-toggle" onclick="toggleInfo();">
+				<svg viewBox="0 0 15 9">
+					<path d="M7.5,9c-.28,0-.54-.12-.73-.32L.27,1.68C-.11,1.28-.09.64.32.27c.4-.38,1.04-.35,1.41.05l5.77,6.21L13.27.32c.37-.41,1.01-.43,1.41-.05.4.38.43,1.01.05,1.41l-6.5,7c-.19.2-.45.32-.73.32Z"/>
+				</svg>
+			</button>
+			<p class="info-main-desc-mobile" data-active="0">
+				Focusing on a strategy-informed creative approach, his work bridges intention and outcome—ensuring that every project delivers thoughtful and impactful results to brands, and their audiences.
+			</p>
+		</main>
+	</div>
+	
+	<script src="/script.js"></script>
+	<script src="/info.js"></script>
+</body>
+</html>

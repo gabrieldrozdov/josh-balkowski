@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Josh Balkowski | Jack & Jill Health</title>
+	<link rel="stylesheet" href="/style.css">
+	<style>
+		.dark {
+			--primary: #c6a5a5;
+			--secondary: #1e4a47;
+		}
+	</style>
+</head>
+<body class="light">
+	<div class="project">
+		<a href="/" class="logo"><h1>Josh Balkowski</h1></a>
+		<nav class="nav">
+			<a href="/work">Work</a>
+			<a href="/info">Info</a>
+		</nav>
+		<button class="mode-toggle mode-toggle-alt" onclick="toggleMode();"></button>
+		<a class="project-next" href="#">Next ></a>
+
+		<header class="project-header">
+			<div class="project-header-thumbnail"></div>
+			<div class="project-header-content">
+				<div class="project-header-client">
+					<div class="project-header-client-label">Client</div>
+					<h1 class="project-header-client-heading">Tag line for the project goes here.</h1>
+					<div class="project-header-client-links">
+						<a href="#" target="_blank">Live Site</a>
+					</div>
+				</div>
+				<button class="project-header-toggle" onclick="toggleProjectMobile();" data-active="0">
+					<svg viewBox="0 0 15 9">
+						<path d="M7.5,9c-.28,0-.54-.12-.73-.32L.27,1.68C-.11,1.28-.09.64.32.27c.4-.38,1.04-.35,1.41.05l5.77,6.21L13.27.32c.37-.41,1.01-.43,1.41-.05.4.38.43,1.01.05,1.41l-6.5,7c-.19.2-.45.32-.73.32Z"/>
+					</svg>
+				</button>
+				<div class="project-header-info" data-active="0">
+					<h2 class="project-header-info-heading">Project Name</h2>
+					<p class="project-header-info-desc">
+						Description of the project goes here.. Lorem ipsum odor amet, consectetuer adipiscing elit. Elit in lectus urna cursus nec proin per magnis tellus. Vulputate magnis ornare vitae efficitur nam facilisi sollicitudin. Tortor laoreet turpis etiam scelerisque torquent, vulputate suscipit efficitur. Suscipit quis maximus hac; praesent efficitur ridiculus maximus nisi. Nisl amet eleifend tempus orci tempor. Aenean eleifend etiam tristique velit efficitur. Auctor eleifend venenatis rutrum; efficitur auctor fusce imperdiet. Varius facilisis purus taciti; conubia eros luctus mi. Nascetur viverra sapien; ex ullamcorper nullam volutpat eli.
+					</p>
+				</div>
+				<div class="project-header-tags" data-active="0">
+					<div class="project-header-tags-section">
+						<h2 class="project-header-tags-heading">Services</h2>
+						<p class="project-header-tags-item">Service 1</p>
+						<p class="project-header-tags-item">Service 2</p>
+						<p class="project-header-tags-item">Service 3</p>
+					</div>
+					<div class="project-header-tags-section">
+						<h2 class="project-header-tags-heading">Collaboration</h2>
+						<p class="project-header-tags-item">Name goes here</p>
+					</div>
+				</div>
+				<div class="project-header-date">Year</div>
+			</div>
+		</header>
+
+		<main class="project-main">
+			<div class="project-main-row">
+				<div class="project-main-item-hover">
+					<img src="https://hips.hearstapps.com/hmg-prod/images/dog-puppy-on-garden-royalty-free-image-1586966191.jpg?crop=0.752xw:1.00xh;0.175xw,0&resize=1200:*" class="project-main-item-hover-img1">
+					<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/90/Labrador_Retriever_portrait.jpg/1200px-Labrador_Retriever_portrait.jpg" class="project-main-item-hover-img2">
+				</div>
+				<img src="https://hips.hearstapps.com/hmg-prod/images/dog-puppy-on-garden-royalty-free-image-1586966191.jpg?crop=0.752xw:1.00xh;0.175xw,0&resize=1200:*" class="project-main-item-img">
+				<video autoplay muted loop playsinline disableRemotePlayback class="project-main-item-video">
+					<source src="https://www.w3schools.com/html/mov_bbb.mp4">
+				</video>
+			</div>
+			<div class="project-main-row">
+				<div class="project-main-item-hover">
+					<img src="https://hips.hearstapps.com/hmg-prod/images/dog-puppy-on-garden-royalty-free-image-1586966191.jpg?crop=0.752xw:1.00xh;0.175xw,0&resize=1200:*" class="project-main-item-hover-img1">
+					<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/90/Labrador_Retriever_portrait.jpg/1200px-Labrador_Retriever_portrait.jpg" class="project-main-item-hover-img2">
+				</div>
+				<img src="https://hips.hearstapps.com/hmg-prod/images/dog-puppy-on-garden-royalty-free-image-1586966191.jpg?crop=0.752xw:1.00xh;0.175xw,0&resize=1200:*" class="project-main-item-img">
+			</div>
+			<div class="project-main-row">
+				<img src="https://hips.hearstapps.com/hmg-prod/images/dog-puppy-on-garden-royalty-free-image-1586966191.jpg?crop=0.752xw:1.00xh;0.175xw,0&resize=1200:*" class="project-main-item-img">
+				<img src="https://hips.hearstapps.com/hmg-prod/images/dog-puppy-on-garden-royalty-free-image-1586966191.jpg?crop=0.752xw:1.00xh;0.175xw,0&resize=1200:*" class="project-main-item-img">
+				<img src="https://hips.hearstapps.com/hmg-prod/images/dog-puppy-on-garden-royalty-free-image-1586966191.jpg?crop=0.752xw:1.00xh;0.175xw,0&resize=1200:*" class="project-main-item-img">
+				<img src="https://hips.hearstapps.com/hmg-prod/images/dog-puppy-on-garden-royalty-free-image-1586966191.jpg?crop=0.752xw:1.00xh;0.175xw,0&resize=1200:*" class="project-main-item-img">
+			</div>
+		</main>
+	</div>
+	
+	<script src="/script.js"></script>
+	<script src="/project.js"></script>
+</body>
+</html>
