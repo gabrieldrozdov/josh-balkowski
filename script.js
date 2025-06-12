@@ -18,6 +18,10 @@ function toggleMode() {
 }
 function detectMode() {
 	let mode = localStorage.getItem('mode');
+	if (!mode) {
+		mode = 'light';
+		localStorage.setItem('mode', 'light');
+	}
 	document.body.classList = [];
 	document.body.classList.add(mode);
 }
