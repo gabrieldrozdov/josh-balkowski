@@ -1,92 +1,146 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Josh Balkowski | Please Keep Well</title>
-	<link rel="stylesheet" href="/style.css">
-	<style>
-		.dark {
-			--primary: #c6a5a5;
-			--secondary: #1e4a47;
-		}
-	</style>
-</head>
-<body class="light">
-	<div class="project">
-		<a href="/" class="logo"><h1>Josh Balkowski</h1></a>
-		<nav class="nav">
-			<a href="/work">Work</a>
-			<a href="/info">Info</a>
-		</nav>
-		<button class="mode-toggle mode-toggle-alt" onclick="toggleMode();"></button>
-		<a class="project-next" href="#">Next ></a>
 
-		<header class="project-header">
-			<div class="project-header-thumbnail"></div>
-			<div class="project-header-content">
-				<div class="project-header-client">
-					<div class="project-header-client-label">Client</div>
-					<h1 class="project-header-client-heading">Tag line for the project goes here.</h1>
-					<div class="project-header-client-links">
-						<a href="#" target="_blank">Live Site</a>
-					</div>
-				</div>
-				<button class="project-header-toggle" onclick="toggleProjectMobile();" data-active="0">
-					<svg viewBox="0 0 15 9">
-						<path d="M7.5,9c-.28,0-.54-.12-.73-.32L.27,1.68C-.11,1.28-.09.64.32.27c.4-.38,1.04-.35,1.41.05l5.77,6.21L13.27.32c.37-.41,1.01-.43,1.41-.05.4.38.43,1.01.05,1.41l-6.5,7c-.19.2-.45.32-.73.32Z"/>
-					</svg>
-				</button>
-				<div class="project-header-info" data-active="0">
-					<h2 class="project-header-info-heading">Project Name</h2>
-					<p class="project-header-info-desc">
-						Description of the project goes here.. Lorem ipsum odor amet, consectetuer adipiscing elit. Elit in lectus urna cursus nec proin per magnis tellus. Vulputate magnis ornare vitae efficitur nam facilisi sollicitudin. Tortor laoreet turpis etiam scelerisque torquent, vulputate suscipit efficitur. Suscipit quis maximus hac; praesent efficitur ridiculus maximus nisi. Nisl amet eleifend tempus orci tempor. Aenean eleifend etiam tristique velit efficitur. Auctor eleifend venenatis rutrum; efficitur auctor fusce imperdiet. Varius facilisis purus taciti; conubia eros luctus mi. Nascetur viverra sapien; ex ullamcorper nullam volutpat eli.
-					</p>
-				</div>
-				<div class="project-header-tags" data-active="0">
-					<div class="project-header-tags-section">
-						<h2 class="project-header-tags-heading">Services</h2>
-						<p class="project-header-tags-item">Service 1</p>
-						<p class="project-header-tags-item">Service 2</p>
-						<p class="project-header-tags-item">Service 3</p>
-					</div>
-					<div class="project-header-tags-section">
-						<h2 class="project-header-tags-heading">Collaboration</h2>
-						<p class="project-header-tags-item">Name goes here</p>
-					</div>
-				</div>
-				<div class="project-header-date">Year</div>
-			</div>
-		</header>
+			<!DOCTYPE html>
+			<html lang="en">
+			<head>
+				<meta charset="UTF-8">
+				<meta name="viewport" content="width=device-width, initial-scale=1.0">
+				<title>Josh Balkowski | Please Keep Well</title>
+				
+	<meta name="author" content="Josh Balkowski">
+	<meta name="keywords" content="Branding, Art Direction, Design, Treatments">
+	<meta name="description" content="Josh Balkowski is a Toronto based Art Director and Designer.">
+	<meta property="og:url" content="https://joshbalkowski.com/">
+	<meta name="og:title" property="og:title" content="Josh Balkowski">
+	<meta property="og:description" content="Josh Balkowski is a Toronto based Art Director and Designer.">
+	<meta property="og:image" content="/assets/meta/opengraph.jpg">
+	<link rel="icon" type="png" href="/assets/meta/favicon.png"></link>
 
-		<main class="project-main">
-			<div class="project-main-row">
-				<div class="project-main-item-hover">
-					<img src="https://hips.hearstapps.com/hmg-prod/images/dog-puppy-on-garden-royalty-free-image-1586966191.jpg?crop=0.752xw:1.00xh;0.175xw,0&resize=1200:*" class="project-main-item-hover-img1">
-					<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/90/Labrador_Retriever_portrait.jpg/1200px-Labrador_Retriever_portrait.jpg" class="project-main-item-hover-img2">
+				<link rel="stylesheet" href="/style.css">
+				<style>
+					.dark {
+						--primary: #FFBAF0;
+						--secondary: #043A04;
+					}
+				</style>
+				<script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"></script>
+				<script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollTrigger.min.js"></script>
+			</head>
+			<body class="light">
+				<div class="project">
+					<div class="logo">Josh Balkowski</div>
+					<nav class="nav">
+						<a href="/work">Work</a>
+						<a href="/info">Info</a>
+					</nav>
+					<button class="mode-toggle mode-toggle-alt" onclick="toggleMode();"></button>
+					<a class="project-next" href="/work/the-butter-experience/">Next ></a>
+			
+					<header class="project-header">
+						<div class="project-header-thumbnail">
+							
+				<img class="project-header-thumbnail-desktop" src="pkw-hero.jpg">
+			
+							
+				<img class="project-header-thumbnail-mobile" src="pkw-hero.jpg">
+			
+						</div>
+						<div class="project-header-content">
+							<div class="project-header-client">
+								<div class="project-animate project-header-client-label">Please Keep Well</div>
+								<h1 class="project-animate project-header-client-heading">A second life looks good on you.</h1>
+								
+							</div>
+							<button class="project-header-toggle" onclick="toggleProjectMobile();" data-active="0">
+								<svg viewBox="0 0 15 9">
+									<path d="M7.5,9c-.28,0-.54-.12-.73-.32L.27,1.68C-.11,1.28-.09.64.32.27c.4-.38,1.04-.35,1.41.05l5.77,6.21L13.27.32c.37-.41,1.01-.43,1.41-.05.4.38.43,1.01.05,1.41l-6.5,7c-.19.2-.45.32-.73.32Z"/>
+								</svg>
+							</button>
+							<div class="project-header-info" data-active="0">
+								<h2 class="project-animate project-header-info-heading">T-Shirts</h2>
+								<p class="project-animate project-header-info-desc">
+									Please Keep Well started with the goal of repurposing by giving thrifted pots a new, reusable life as homes for Ben’s homegrown plants. Their first run of merch follows the brands environmentally conscious perspective. Each design blends Ben’s hand-drawn sketches with  repurposed content from their Instagram. A loud bark, with absolutely no bite, all designs will be screen-printed in limited runs (on thrifted tees, of course)—some day soon.
+								</p>
+							</div>
+							<div class="project-header-tags" data-active="0">
+								
+					<div class="project-header-tags-section">
+						<h2 class="project-animate project-header-tags-heading">Services</h2>
+						<p class="project-animate project-header-tags-item">Apparel Design</p>
+					</div>
+				
+					<div class="project-header-tags-section">
+						<h2 class="project-animate project-header-tags-heading">Collaboration</h2>
+						<p class="project-animate project-header-tags-item">Benjamin Badiuk</p>
+					</div>
+				
+							</div>
+							<div class="project-animate project-header-date">2025</div>
+						</div>
+					</header>
+			
+					<main class="project-main">
+						
+				<div class="project-main-row">
+					
+						<div class="project-animate project-main-item-hover" data-desktop="true" data-mobile="true">
+							<img src="pkw-tshirt-wiper-01.jpg" class="project-main-item-hover-img1">
+							<img src="pkw-tshirt-wiper-02.jpg" class="project-main-item-hover-img2">
+						</div>
+					
+						<div class="project-animate project-main-item-hover" data-desktop="true" data-mobile="true">
+							<img src="pkw-tshirt-back-01.jpg" class="project-main-item-hover-img1">
+							<img src="pkw-tshirt-back-02.jpg" class="project-main-item-hover-img2">
+						</div>
+					
 				</div>
-				<img src="https://hips.hearstapps.com/hmg-prod/images/dog-puppy-on-garden-royalty-free-image-1586966191.jpg?crop=0.752xw:1.00xh;0.175xw,0&resize=1200:*" class="project-main-item-img">
-				<video autoplay muted loop playsinline disableRemotePlayback class="project-main-item-video">
-					<source src="https://www.w3schools.com/html/mov_bbb.mp4">
-				</video>
-			</div>
-			<div class="project-main-row">
-				<div class="project-main-item-hover">
-					<img src="https://hips.hearstapps.com/hmg-prod/images/dog-puppy-on-garden-royalty-free-image-1586966191.jpg?crop=0.752xw:1.00xh;0.175xw,0&resize=1200:*" class="project-main-item-hover-img1">
-					<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/90/Labrador_Retriever_portrait.jpg/1200px-Labrador_Retriever_portrait.jpg" class="project-main-item-hover-img2">
+			
+				<div class="project-main-row">
+					
+						<div class="project-animate project-main-item-hover" data-desktop="true" data-mobile="false">
+							<img src="pkw-tshirt-wall-01.jpg" class="project-main-item-hover-img1">
+							<img src="pkw-tshirt-wall-02.jpg" class="project-main-item-hover-img2">
+						</div>
+					
+						<div class="project-animate project-main-item-hover" data-desktop="false" data-mobile="true">
+							<img src="pkw-tshirt-wall-01-mobile.jpg" class="project-main-item-hover-img1">
+							<img src="pkw-tshirt-wall-02-mobile.jpg" class="project-main-item-hover-img2">
+						</div>
+					
 				</div>
-				<img src="https://hips.hearstapps.com/hmg-prod/images/dog-puppy-on-garden-royalty-free-image-1586966191.jpg?crop=0.752xw:1.00xh;0.175xw,0&resize=1200:*" class="project-main-item-img">
-			</div>
-			<div class="project-main-row">
-				<img src="https://hips.hearstapps.com/hmg-prod/images/dog-puppy-on-garden-royalty-free-image-1586966191.jpg?crop=0.752xw:1.00xh;0.175xw,0&resize=1200:*" class="project-main-item-img">
-				<img src="https://hips.hearstapps.com/hmg-prod/images/dog-puppy-on-garden-royalty-free-image-1586966191.jpg?crop=0.752xw:1.00xh;0.175xw,0&resize=1200:*" class="project-main-item-img">
-				<img src="https://hips.hearstapps.com/hmg-prod/images/dog-puppy-on-garden-royalty-free-image-1586966191.jpg?crop=0.752xw:1.00xh;0.175xw,0&resize=1200:*" class="project-main-item-img">
-				<img src="https://hips.hearstapps.com/hmg-prod/images/dog-puppy-on-garden-royalty-free-image-1586966191.jpg?crop=0.752xw:1.00xh;0.175xw,0&resize=1200:*" class="project-main-item-img">
-			</div>
-		</main>
-	</div>
-	
-	<script src="/script.js"></script>
-	<script src="/project.js"></script>
-</body>
-</html>
+			
+				<div class="project-main-row">
+					
+						<div class="project-animate project-main-item-hover" data-desktop="true" data-mobile="true">
+							<img src="pkw-tshirt-top-01.jpg" class="project-main-item-hover-img1">
+							<img src="pkw-tshirt-top-02.jpg" class="project-main-item-hover-img2">
+						</div>
+					
+						<div class="project-animate project-main-item-hover" data-desktop="true" data-mobile="true">
+							<img src="pkw-tshirt-car-01.jpg" class="project-main-item-hover-img1">
+							<img src="pkw-tshirt-car-02.jpg" class="project-main-item-hover-img2">
+						</div>
+					
+				</div>
+			
+				<div class="project-main-row">
+					
+						<div class="project-animate project-main-item-hover" data-desktop="true" data-mobile="false">
+							<img src="pkw-tshirt-cacti-01.jpg" class="project-main-item-hover-img1">
+							<img src="pkw-tshirt-cacti-02.jpg" class="project-main-item-hover-img2">
+						</div>
+					
+						<div class="project-animate project-main-item-hover" data-desktop="false" data-mobile="true">
+							<img src="pkw-tshirt-cacti-01-mobile.jpg" class="project-main-item-hover-img1">
+							<img src="pkw-tshirt-cacti-02-mobile.jpg" class="project-main-item-hover-img2">
+						</div>
+					
+				</div>
+			
+					</main>
+				</div>
+				
+				<script src="/script.js"></script>
+				<script src="/project.js"></script>
+			</body>
+			</html>
+		

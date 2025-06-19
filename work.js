@@ -1,28 +1,28 @@
 // Switch between filters
-let activeFilter = 'all';
+let activeFilter = 'All';
 function setFilter(filter) {
 	activeFilter = filter;
 
 	// Style active filter
 	for (let filterBtn of document.querySelectorAll('.work-projects-filters-category')) {
 		filterBtn.dataset.active = 0;
-		if (filterBtn.dataset.filter == activeFilter) {
+		if (filterBtn.dataset.category == activeFilter) {
 			filterBtn.dataset.active = 1;
 		}
 	}
 
 	// Hide/show projects based on active filter
-	if (activeFilter == 'all') {
+	if (activeFilter == 'All') {
 		for (let projectLink of document.querySelectorAll('.work-projects-link')) {
-			projectLink.dataset.active = 1;
+			projectLink.dataset.hidden = false;
 		}
 	} else {
 		for (let projectLink of document.querySelectorAll('.work-projects-link')) {
-			let projectTags = projectLink.dataset.tags.split(',');
-			if (projectTags.includes(activeFilter)) {
-				projectLink.dataset.active = 1;
+			let projectTags = projectLink.dataset.filters.split(',');
+			if (projectTags.includes(activeFilter) || projectTags.includes(activeFilter + " ") || projectTags.includes(" " + activeFilter)) {
+				projectLink.dataset.hidden = false;
 			} else {
-				projectLink.dataset.active = 0;
+				projectLink.dataset.hidden = true;
 			}
 		}
 	}
@@ -30,13 +30,26 @@ function setFilter(filter) {
 
 // Show featured image
 let workProjectLinks = document.querySelectorAll('.work-projects-link');
+let imageDelay;
 for (let workProjectLink of workProjectLinks) {
 	workProjectLink.addEventListener('mouseenter', () => {
+		clearTimeout(imageDelay);
 		for (let workProjectLink of workProjectLinks) {
 			workProjectLink.dataset.active = 0;
 		}
 		workProjectLink.dataset.active = 1;
 
-		// TODO: show featured image
+		for (let workHero of document.querySelectorAll('.work-hero')) {
+			workHero.dataset.active = 0;
+		}
+		let featuredHero = document.querySelector(`.work-hero[data-project="${workProjectLink.dataset.project}"]`);
+		featuredHero.dataset.active = 1;
+	})
+	workProjectLink.addEventListener('mouseleave', () => {
+		imageDelay = setTimeout(() => {
+			for (let workProjectLink of workProjectLinks) {
+				workProjectLink.dataset.active = 1;
+			}
+		}, 250)
 	})
 }

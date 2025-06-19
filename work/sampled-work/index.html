@@ -1,92 +1,153 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Josh Balkowski | Sampled Work</title>
-	<link rel="stylesheet" href="/style.css">
-	<style>
-		.dark {
-			--primary: #c6a5a5;
-			--secondary: #1e4a47;
-		}
-	</style>
-</head>
-<body class="light">
-	<div class="project">
-		<a href="/" class="logo"><h1>Josh Balkowski</h1></a>
-		<nav class="nav">
-			<a href="/work">Work</a>
-			<a href="/info">Info</a>
-		</nav>
-		<button class="mode-toggle mode-toggle-alt" onclick="toggleMode();"></button>
-		<a class="project-next" href="#">Next ></a>
 
-		<header class="project-header">
-			<div class="project-header-thumbnail"></div>
-			<div class="project-header-content">
-				<div class="project-header-client">
-					<div class="project-header-client-label">Client</div>
-					<h1 class="project-header-client-heading">Tag line for the project goes here.</h1>
-					<div class="project-header-client-links">
-						<a href="#" target="_blank">Live Site</a>
-					</div>
-				</div>
-				<button class="project-header-toggle" onclick="toggleProjectMobile();" data-active="0">
-					<svg viewBox="0 0 15 9">
-						<path d="M7.5,9c-.28,0-.54-.12-.73-.32L.27,1.68C-.11,1.28-.09.64.32.27c.4-.38,1.04-.35,1.41.05l5.77,6.21L13.27.32c.37-.41,1.01-.43,1.41-.05.4.38.43,1.01.05,1.41l-6.5,7c-.19.2-.45.32-.73.32Z"/>
-					</svg>
-				</button>
-				<div class="project-header-info" data-active="0">
-					<h2 class="project-header-info-heading">Project Name</h2>
-					<p class="project-header-info-desc">
-						Description of the project goes here.. Lorem ipsum odor amet, consectetuer adipiscing elit. Elit in lectus urna cursus nec proin per magnis tellus. Vulputate magnis ornare vitae efficitur nam facilisi sollicitudin. Tortor laoreet turpis etiam scelerisque torquent, vulputate suscipit efficitur. Suscipit quis maximus hac; praesent efficitur ridiculus maximus nisi. Nisl amet eleifend tempus orci tempor. Aenean eleifend etiam tristique velit efficitur. Auctor eleifend venenatis rutrum; efficitur auctor fusce imperdiet. Varius facilisis purus taciti; conubia eros luctus mi. Nascetur viverra sapien; ex ullamcorper nullam volutpat eli.
-					</p>
-				</div>
-				<div class="project-header-tags" data-active="0">
-					<div class="project-header-tags-section">
-						<h2 class="project-header-tags-heading">Services</h2>
-						<p class="project-header-tags-item">Service 1</p>
-						<p class="project-header-tags-item">Service 2</p>
-						<p class="project-header-tags-item">Service 3</p>
-					</div>
-					<div class="project-header-tags-section">
-						<h2 class="project-header-tags-heading">Collaboration</h2>
-						<p class="project-header-tags-item">Name goes here</p>
-					</div>
-				</div>
-				<div class="project-header-date">Year</div>
-			</div>
-		</header>
+			<!DOCTYPE html>
+			<html lang="en">
+			<head>
+				<meta charset="UTF-8">
+				<meta name="viewport" content="width=device-width, initial-scale=1.0">
+				<title>Josh Balkowski | (Various)</title>
+				
+	<meta name="author" content="Josh Balkowski">
+	<meta name="keywords" content="Branding, Art Direction, Design, Treatments">
+	<meta name="description" content="Josh Balkowski is a Toronto based Art Director and Designer.">
+	<meta property="og:url" content="https://joshbalkowski.com/">
+	<meta name="og:title" property="og:title" content="Josh Balkowski">
+	<meta property="og:description" content="Josh Balkowski is a Toronto based Art Director and Designer.">
+	<meta property="og:image" content="/assets/meta/opengraph.jpg">
+	<link rel="icon" type="png" href="/assets/meta/favicon.png"></link>
 
-		<main class="project-main">
-			<div class="project-main-row">
-				<div class="project-main-item-hover">
-					<img src="https://hips.hearstapps.com/hmg-prod/images/dog-puppy-on-garden-royalty-free-image-1586966191.jpg?crop=0.752xw:1.00xh;0.175xw,0&resize=1200:*" class="project-main-item-hover-img1">
-					<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/90/Labrador_Retriever_portrait.jpg/1200px-Labrador_Retriever_portrait.jpg" class="project-main-item-hover-img2">
-				</div>
-				<img src="https://hips.hearstapps.com/hmg-prod/images/dog-puppy-on-garden-royalty-free-image-1586966191.jpg?crop=0.752xw:1.00xh;0.175xw,0&resize=1200:*" class="project-main-item-img">
-				<video autoplay muted loop playsinline disableRemotePlayback class="project-main-item-video">
-					<source src="https://www.w3schools.com/html/mov_bbb.mp4">
+				<link rel="stylesheet" href="/style.css">
+				<style>
+					.dark {
+						--primary: #FBF4F4;
+						--secondary: #000000;
+					}
+				</style>
+				<script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"></script>
+				<script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollTrigger.min.js"></script>
+			</head>
+			<body class="light">
+				<div class="project">
+					<div class="logo">Josh Balkowski</div>
+					<nav class="nav">
+						<a href="/work">Work</a>
+						<a href="/info">Info</a>
+					</nav>
+					<button class="mode-toggle mode-toggle-alt" onclick="toggleMode();"></button>
+					<a class="project-next" href="/work/please-keep-well/">Next ></a>
+			
+					<header class="project-header">
+						<div class="project-header-thumbnail">
+							
+				<video autoplay muted loop playsinline disableRemotePlayback class="project-header-thumbnail-desktop" poster="various-hero.jpg"">
+					<source src="various-hero.mp4">
 				</video>
-			</div>
-			<div class="project-main-row">
-				<div class="project-main-item-hover">
-					<img src="https://hips.hearstapps.com/hmg-prod/images/dog-puppy-on-garden-royalty-free-image-1586966191.jpg?crop=0.752xw:1.00xh;0.175xw,0&resize=1200:*" class="project-main-item-hover-img1">
-					<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/90/Labrador_Retriever_portrait.jpg/1200px-Labrador_Retriever_portrait.jpg" class="project-main-item-hover-img2">
+			
+							
+				<video autoplay muted loop playsinline disableRemotePlayback class="project-header-thumbnail-mobile" poster="various-hero.jpg"">
+					<source src="various-hero.mp4">
+				</video>
+			
+						</div>
+						<div class="project-header-content">
+							<div class="project-header-client">
+								<div class="project-animate project-header-client-label"><em>(</em>Various<em>)</em></div>
+								<h1 class="project-animate project-header-client-heading">Treatments that make the cut.</h1>
+								
+							</div>
+							<button class="project-header-toggle" onclick="toggleProjectMobile();" data-active="0">
+								<svg viewBox="0 0 15 9">
+									<path d="M7.5,9c-.28,0-.54-.12-.73-.32L.27,1.68C-.11,1.28-.09.64.32.27c.4-.38,1.04-.35,1.41.05l5.77,6.21L13.27.32c.37-.41,1.01-.43,1.41-.05.4.38.43,1.01.05,1.41l-6.5,7c-.19.2-.45.32-.73.32Z"/>
+								</svg>
+							</button>
+							<div class="project-header-info" data-active="0">
+								<h2 class="project-animate project-header-info-heading">Sampled Work</h2>
+								<p class="project-animate project-header-info-desc">
+									Treatments are where ideas take shape—bridging the gap between concept, written, and visual references. This collection showcases a range of visual approaches, each tailored to elevate the director’s vision and bring a pitch to life. Every treatment is designed to captivate, clarify, and sell the story before a single frame is shot. Get in touch for full inDesign links, happy to share if you want to see more!
+								</p>
+							</div>
+							<div class="project-header-tags" data-active="0">
+								
+					<div class="project-header-tags-section">
+						<h2 class="project-animate project-header-tags-heading">Services</h2>
+						<p class="project-animate project-header-tags-item">Treatment Design</p>
+					</div>
+				
+							</div>
+							<div class="project-animate project-header-date">2022 – 2025</div>
+						</div>
+					</header>
+			
+					<main class="project-main">
+						
+				<div class="project-main-row">
+					
+						<video autoplay muted loop playsinline disableRemotePlayback class="project-animate project-main-item-video" poster="various-kitkat.jpg" data-desktop="true" data-mobile="true">
+							<source src="various-kitkat.mp4">
+						</video>
+					
 				</div>
-				<img src="https://hips.hearstapps.com/hmg-prod/images/dog-puppy-on-garden-royalty-free-image-1586966191.jpg?crop=0.752xw:1.00xh;0.175xw,0&resize=1200:*" class="project-main-item-img">
-			</div>
-			<div class="project-main-row">
-				<img src="https://hips.hearstapps.com/hmg-prod/images/dog-puppy-on-garden-royalty-free-image-1586966191.jpg?crop=0.752xw:1.00xh;0.175xw,0&resize=1200:*" class="project-main-item-img">
-				<img src="https://hips.hearstapps.com/hmg-prod/images/dog-puppy-on-garden-royalty-free-image-1586966191.jpg?crop=0.752xw:1.00xh;0.175xw,0&resize=1200:*" class="project-main-item-img">
-				<img src="https://hips.hearstapps.com/hmg-prod/images/dog-puppy-on-garden-royalty-free-image-1586966191.jpg?crop=0.752xw:1.00xh;0.175xw,0&resize=1200:*" class="project-main-item-img">
-				<img src="https://hips.hearstapps.com/hmg-prod/images/dog-puppy-on-garden-royalty-free-image-1586966191.jpg?crop=0.752xw:1.00xh;0.175xw,0&resize=1200:*" class="project-main-item-img">
-			</div>
-		</main>
-	</div>
-	
-	<script src="/script.js"></script>
-	<script src="/project.js"></script>
-</body>
-</html>
+			
+				<div class="project-main-row">
+					
+						<video autoplay muted loop playsinline disableRemotePlayback class="project-animate project-main-item-video" poster="various-maddies-story.jpg" data-desktop="true" data-mobile="true">
+							<source src="various-maddies-story.mp4">
+						</video>
+					
+				</div>
+			
+				<div class="project-main-row">
+					
+						<video autoplay muted loop playsinline disableRemotePlayback class="project-animate project-main-item-video" poster="various-itch.jpg" data-desktop="true" data-mobile="true">
+							<source src="various-itch.mp4">
+						</video>
+					
+				</div>
+			
+				<div class="project-main-row">
+					
+						<video autoplay muted loop playsinline disableRemotePlayback class="project-animate project-main-item-video" poster="various-venmo.jpg" data-desktop="true" data-mobile="true">
+							<source src="various-venmo.mp4">
+						</video>
+					
+				</div>
+			
+				<div class="project-main-row">
+					
+						<video autoplay muted loop playsinline disableRemotePlayback class="project-animate project-main-item-video" poster="various-bronco.jpg" data-desktop="true" data-mobile="true">
+							<source src="various-bronco.mp4">
+						</video>
+					
+				</div>
+			
+				<div class="project-main-row">
+					
+						<video autoplay muted loop playsinline disableRemotePlayback class="project-animate project-main-item-video" poster="various-spindrift.jpg" data-desktop="true" data-mobile="true">
+							<source src="various-spindrift.mp4">
+						</video>
+					
+				</div>
+			
+				<div class="project-main-row">
+					
+						<video autoplay muted loop playsinline disableRemotePlayback class="project-animate project-main-item-video" poster="various-dink-dunk.jpg" data-desktop="true" data-mobile="true">
+							<source src="various-dink-dunk.mp4">
+						</video>
+					
+				</div>
+			
+				<div class="project-main-row">
+					
+						<video autoplay muted loop playsinline disableRemotePlayback class="project-animate project-main-item-video" poster="various-nfl.jpg" data-desktop="true" data-mobile="true">
+							<source src="various-nfl.mp4">
+						</video>
+					
+				</div>
+			
+					</main>
+				</div>
+				
+				<script src="/script.js"></script>
+				<script src="/project.js"></script>
+			</body>
+			</html>
+		
