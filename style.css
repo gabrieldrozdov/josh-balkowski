@@ -582,7 +582,7 @@ body {
 @media (max-width: 800px) {
 	.info-main {
 		position: static;
-		padding: calc(100dvh - 380px) 20px 80px 20px;
+		padding: calc(100svh - 380px) 20px 80px 20px;
 		gap: 0;
 		display: flex;
 		flex-direction: column;
@@ -594,7 +594,7 @@ body {
 		top: 0;
 		left: 0;
 		right: 0;
-		height: calc(100dvh - 400px);
+		height: calc(100svh - 400px);
 	}
 	.info-main-headshot-desktop {
 		display: none;
@@ -686,7 +686,7 @@ body {
 	line-height: 1.25em;
 }
 .project-header-thumbnail {
-	height: calc(100dvh - 400px);
+	height: calc(100svh - 400px);
 	pointer-events: none;
 }
 .project-header-thumbnail-desktop,
