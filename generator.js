@@ -3,23 +3,23 @@
 // Edit this!
 // ——————————————————————————————————————————————————————
 
-let workFilters = [
+const workFilters = [
 	"Branding",
 	"Art Direction",
 	"Design",
 	"Treatments"
 ]
 
-let infoHeading = `
+const infoHeading = `
 	Josh Balkowski is a Toronto based Art&nbsp;Director and Designer.
 `;
 
-let infoHeadshot = {
+const infoHeadshot = {
 	"desktop": "headshot-desktop.jpg",
 	"mobile": "headshot-mobile.jpg"
 }
 
-let infoContentColumn1 = `
+const infoContentColumn1 = `
 	<h2>About</h2>
 	<p>
 		I’ve led creative teams, co-founded a modest design agency, and collaborated with brands, production companies, startups, studios, and clients, of all shapes and sizes.
@@ -32,7 +32,7 @@ let infoContentColumn1 = `
 	</p>
 `;
 
-let infoContentColumn2 = `
+const infoContentColumn2 = `
 	<h2>Recently</h2>
 	<p>
 		Made a fun website for a friend’s band. Designed some packaging for incense sticks. Just wrapped work on a disclosed project with an incredible team as a Sr. Designer for Apple.
@@ -49,7 +49,7 @@ let infoContentColumn2 = `
 	</p>
 `;
 
-let infoContentColumn3 = `
+const infoContentColumn3 = `
 	<h2>Services</h2>
 	<ul>
 		<li>Art Direction</li>
@@ -164,7 +164,7 @@ function generateHTML() {
 		let projectHeroMobile = "";
 		if (project['hero-desktop']['video'].length > 0) {
 			projectHeroDesktop = `
-				<video autoplay muted loop playsinline disableRemotePlayback class="project-header-thumbnail-desktop" poster="${project['hero-desktop']['image']}"">
+				<video autoplay muted loop playsinline disableRemotePlayback class="project-header-thumbnail-desktop" poster="${project['hero-desktop']['image']}">
 					<source src="${project['hero-desktop']['video']}">
 				</video>
 			`;
@@ -175,7 +175,7 @@ function generateHTML() {
 		}
 		if (project['hero-mobile']['video'].length > 0) {
 			projectHeroMobile = `
-				<video autoplay muted loop playsinline disableRemotePlayback class="project-header-thumbnail-mobile" poster="${project['hero-mobile']['image']}"">
+				<video autoplay muted loop playsinline disableRemotePlayback class="project-header-thumbnail-mobile" poster="${project['hero-mobile']['image']}">
 					<source src="${project['hero-mobile']['video']}">
 				</video>
 			`;
@@ -194,7 +194,7 @@ function generateHTML() {
 		}
 		if (project['hero-desktop']['video'].length > 0) {
 			workHeroDesktop = `
-				<video autoplay muted loop playsinline disableRemotePlayback class="work-hero-media work-hero-desktop" poster="/work/${project['slug']}/${project['hero-desktop']['image']}"">
+				<video autoplay muted loop playsinline disableRemotePlayback class="work-hero-media work-hero-desktop" poster="/work/${project['slug']}/${project['hero-desktop']['image']}">
 					<source src="/work/${project['slug']}/${project['hero-desktop']['video']}">
 				</video>
 			`;
@@ -205,7 +205,7 @@ function generateHTML() {
 		}
 		if (project['hero-mobile']['video'].length > 0) {
 			workHeroMobile = `
-				<video autoplay muted loop playsinline disableRemotePlayback class="work-hero-media work-hero-mobile" poster="/work/${project['slug']}/${project['hero-mobile']['image']}"">
+				<video autoplay muted loop playsinline disableRemotePlayback class="work-hero-media work-hero-mobile" poster="/work/${project['slug']}/${project['hero-mobile']['image']}">
 					<source src="/work/${project['slug']}/${project['hero-mobile']['video']}">
 				</video>
 			`;
@@ -397,7 +397,7 @@ function generateHTML() {
 							<h1 class="info-main-desc">
 								${infoHeading}
 							</h1>
-							<a class="info-main-email" href="mailto:joshbalkowski@gmail.com">joshbalkowski@gmail.com ↗</a>
+							<a class="info-main-email" href="mailto:joshbalkowski@gmail.com" target="_blank">joshbalkowski@gmail.com ↗</a>
 						</div>
 						<div class="info-main-headshot">
 							<img src="/assets/media/${infoHeadshot['desktop']}" class="info-main-headshot-desktop">
