@@ -1,7 +1,11 @@
 // Switch between filters
 let activeFilter = 'All';
 function setFilter(filter) {
-	activeFilter = filter;
+	if (activeFilter == filter) {
+		activeFilter = "All";
+	} else {
+		activeFilter = filter;
+	}
 
 	// Style active filter
 	for (let filterBtn of document.querySelectorAll('.work-projects-filters-category')) {

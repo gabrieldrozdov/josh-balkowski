@@ -10,4 +10,4 @@ setInterval(() => {
 	}
 	let currentHero = heroes[heroIndex];
 	currentHero.dataset.active = true;
-}, 4000)
+}, 2000)

@@ -1,3 +1,71 @@
+// ——————————————————————————————————————————————————————
+// SITE CONTENT
+// Edit this!
+// ——————————————————————————————————————————————————————
+
+let workFilters = [
+	"Branding",
+	"Art Direction",
+	"Design",
+	"Treatments"
+]
+
+let infoHeading = `
+	Josh Balkowski is a Toronto based Art&nbsp;Director and Designer.
+`;
+
+let infoHeadshot = {
+	"desktop": "headshot-desktop.jpg",
+	"mobile": "headshot-mobile.jpg"
+}
+
+let infoContentColumn1 = `
+	<h2>About</h2>
+	<p>
+		I’ve led creative teams, co-founded a modest design agency, and collaborated with brands, production companies, startups, studios, and clients, of all shapes and sizes.
+	</p>
+	<p>
+		Whether building brand identities, designing systems processes, researching for presentations, or developing campaigns, my approach is always the same; align concepts with business strategy, to connect thoughtful ideas to tangible outcomes.
+	</p>
+	<p>
+		I like helping ideas find their shape. I love clarity. I care about making work that’s both thoughtful and impactful to brands, people, and their communities.
+	</p>
+`;
+
+let infoContentColumn2 = `
+	<h2>Recently</h2>
+	<p>
+		Made a fun website for a friend’s band. Designed some packaging for incense sticks. Just wrapped work on a disclosed project with an incredible team as a Sr. Designer for Apple.
+	</p>
+
+	<h2>Currently</h2>
+	<p>
+		Consulting for a mental-health clinic to create systems that encourage inter-organization communication and establish new processes, that increase efficiency around time consuming practices. Also, I’m updating my onboarding materials for new clients.
+	</p>
+
+	<h2>Open To</h2>
+	<p>
+		Art direction, brand identity, and senior design roles or contracts within agencies or studios. But, always open to chat about interesting projects and ideas in other categories.
+	</p>
+`;
+
+let infoContentColumn3 = `
+	<h2>Services</h2>
+	<ul>
+		<li>Art Direction</li>
+		<li>Branding</li>
+		<li>Web Design</li>
+		<li>Packaging Design</li>
+		<li>Presentation Design</li>
+		<li>Apparel Design</li>
+	</ul>
+`;
+
+// ——————————————————————————————————————————————————————
+// SITE GENERATOR CODE
+// DO NOT EDIT!!!
+// ——————————————————————————————————————————————————————
+
 const fs = require('fs');
 const projects = require('./projects.json');
 
@@ -178,10 +246,11 @@ function generateHTML() {
 				</style>
 				<script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"></script>
 				<script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollTrigger.min.js"></script>
+				<!-- Site developed by No Replica! https://noreplica.com/ -->
 			</head>
 			<body class="light">
 				<div class="project">
-					<div class="logo">Josh Balkowski</div>
+					<a class="logo" href="/">Josh Balkowski</a>
 					<nav class="nav">
 						<a href="/work">Work</a>
 						<a href="/info">Info</a>
@@ -229,12 +298,22 @@ function generateHTML() {
 			</html>
 		`;
 
-		// Create project file
+		// Create project file (and folder if needed)
+		let folderPath = `./work/${project['slug']}/`;
+		if (!fs.existsSync(folderPath)) {
+			fs.mkdirSync(folderPath, { recursive: true });
+		}
 		fs.writeFile(`./work/${project['slug']}/index.html`, projectContent, err => {
 			if (err) {
 				console.error(err);
 			}
 		});
+	}
+
+	// Work page
+	let workFiltersHTML = ``;
+	for (let filter of workFilters) {
+		workFiltersHTML += `<button class="work-projects-filters-category" data-category="${filter}" onclick="setFilter('${filter}')">${filter}</button>`;
 	}
 
 	let workContent = `
@@ -249,21 +328,18 @@ function generateHTML() {
 		</head>
 		<body class="light">
 			<div class="work">
-				<div class="logo">Josh Balkowski</div>
+				<a class="logo" href="/">Josh Balkowski</a>
 				<nav class="nav">
 					<a href="/" data-active="1">Work</a>
 					<a href="/info">Info</a>
 				</nav>
 				<button class="mode-toggle mode-toggle-alt" onclick="toggleMode();"></button>
-				<p class="copyright">© ${currentYear}</p>
+				<a class="copyright" href="/credits/">© ${currentYear}</a>
 
 				<main class="work-projects">
 					<div class="work-projects-filters">
 						<div class="work-projects-filters-categories">
-							<button class="work-projects-filters-category" data-category="Branding" onclick="setFilter('Branding')">Branding</button>
-							<button class="work-projects-filters-category" data-category="Art Direction" onclick="setFilter('Art Direction')">Art Direction</button>
-							<button class="work-projects-filters-category" data-category="Design" onclick="setFilter('Design')">Design</button>
-							<button class="work-projects-filters-category" data-category="Treatments" onclick="setFilter('Treatments')">Treatments</button>
+							${workFiltersHTML}
 						</div>
 						<button class="work-projects-filters-category" data-category="All" onclick="setFilter('All')" data-active="1">All</button>
 					</div>
@@ -303,28 +379,30 @@ function generateHTML() {
 			<title>Josh Balkowski | Info</title>
 			${meta}
 			<link rel="stylesheet" href="/style.css">
+			<!-- Site developed by No Replica! https://noreplica.com/ -->
 		</head>
 		<body class="light">
 			<div class="info">
-				<div class="logo">Josh Balkowski</div>
+				<a class="logo" href="/">Josh Balkowski</a>
 				<nav class="nav">
 					<a href="/work">Work</a>
 					<a href="/" data-active="1">Info</a>
 				</nav>
 				<button class="mode-toggle mode-toggle-alt" onclick="toggleMode();"></button>
-				<p class="copyright">© ${currentYear}</p>
+				<a class="copyright" href="/credits/">© ${currentYear}</a>
 
 				<main class="info-main" data-active="0">
 					<header class="info-main-header">
-						<h1 class="info-main-desc">
-							Josh Balkowski is a Toronto based Art&nbsp;Director and Designer.
-						</h1>
-						<button class="info-main-email" onclick="copyEmail();">
-							<span>joshbalkowski@gmail.com</span>
-							<svg viewBox="0 0 29 29">
-								<path class="cls-2" d="M20.99,6h-8c-1.1,0-2,.9-2,2v2h-3c-1.1,0-2,.9-2,2v9c0,1.1.9,2,2,2h8c1.1,0,2-.9,2-2v-2h3c1.1,0,2-.9,2-2v-9c0-1.1-.9-2-2-2ZM15.99,21H7.99v-9s0,0,0,0h8v9ZM20.99,17h-3v-5c0-1.1-.9-2-2-2h-3v-2s0,0,0,0h8v9Z"/>
-							</svg>
-						</button>
+						<div class="info-main-header-text">
+							<h1 class="info-main-desc">
+								${infoHeading}
+							</h1>
+							<a class="info-main-email" href="mailto:joshbalkowski@gmail.com">joshbalkowski@gmail.com ↗</a>
+						</div>
+						<div class="info-main-headshot">
+							<img src="/assets/media/${infoHeadshot['desktop']}" class="info-main-headshot-desktop">
+							<img src="/assets/media/${infoHeadshot['mobile']}" class="info-main-headshot-mobile">
+						</div>
 					</header>
 
 					<button class="info-main-desc-toggle" onclick="toggleInfo();">
@@ -333,101 +411,22 @@ function generateHTML() {
 						</svg>
 					</button>
 
-					<div class="info-main-body info-main-col1">
-						<h2>About</h2>
-						<p>
-							I’ve led creative teams, co-founded a modest design agency, and collaborated with brands, production companies, startups, studios, and clients, of all shapes and sizes.
-						</p>
-						<p>
-							Whether building brand identities, designing systems processes, researching for presentations, or developing campaigns, my approach is always the same; align concepts with business strategy, to connect thoughtful ideas to tangible outcomes.
-						</p>
-						<p>
-							I like helping ideas find their shape. I love clarity. I care about making work that’s both thoughtful and impactful to brands, people, and their communities.
-						</p>
+					<div class="info-main-body">
+						${infoContentColumn1}
+					</div>
 
-						<div class="info-main-body-break"></div>
-
-						<h2>Recently</h2>
-						<p>
-							Made a fun website for a friend’s band. Designed some packaging for incense sticks. Just wrapped work on a disclosed project with an incredible team as a Sr. Designer for Apple.
-						</p>
-
-						<div class="info-main-body-break"></div>
-
-						<h2>Currently</h2>
-						<p>
-							Consulting for a mental-health clinic to create systems that encourage inter-organization communication and establish new processes, that increase efficiency around time consuming practices. Also, I’m updating my onboarding materials for new clients.
-						</p>
-
-						<div class="info-main-body-break"></div>
-
-						<h2>Open to</h2>
-						<p>
-							Art direction, brand identity, and senior design roles or contracts within agencies or studios. But, always open to chat about interesting projects and ideas in other categories.
-						</p>
+					<div class="info-main-body">
+						${infoContentColumn2}
 					</div>
 					
-					<div class="info-main-body info-main-col2">
-						<h2>Services</h2>
-						<ul>
-							<li>Art Direction</li>
-							<li>Branding</li>
-							<li>Web Design</li>
-							<li>Packaging Design</li>
-							<li>Presentation Design</li>
-							<li>Apparel Design</li>
-						</ul>
-
-						<div class="info-main-body-break"></div>
-
-						<h2>Website</h2>
-						<p>
-							<a href="https://noreplica.com/" target="_blank">No Replica ↗</a>
-						</p>
+					<div class="info-main-body">
+						${infoContentColumn3}
 					</div>
 
-					<div class="info-main-body info-main-col3">
-						<h2>Free ideas</h2>
-						<p>
-							Some half-baked ideas from my notes app:
-						</p>
-						<p>
-							→ Oh Goooogle!<br>
-							<em>Show people doing things Google already handles to highlight how seamless life becomes when the small stuff just works. Examples: manually navigating with a map sprawled open in the car, running to change the temp on a thermostat when your roommate asks no matter what you were in the middle of, having a local translating when buying flowers and they follow you - making an intimate moment awkward.</em>
-						</p>
-						<p>
-							→ Aritzia: Worth an Audience<br>
-							<em>A campaign centred on the plush lounge area within Aritzia, (now with its own coffee shop). The looks are so good, they deserve an audience, so we made an stage for them - where friends get to enjoy being a spectator to style.</em>
-						</p>
-						<p>
-							→ GPS Walking Tours<br>
-							<em>Google maps has a powerful understanding of where you have been and where you are exploring for the first time. Imagine an option on google maps for a self guided walking tour where ambient audio, historical facts and parking memory or transit directions pose as a conversation on a solo discovery day in new city. Real-world interactive assistive layer.</em>
-						</p>
-						<p>
-							→ Physical Savings<br>
-							<em>A savings system that turns impulse buying into impulse saving. Imagine a sealed “mystery savings box” at grocery stores priced at $5, $10, or $25. You buy the box, get a small item or two inside, and the remaining value is automatically deposited into your savings account. Designed to add a tactile, game-like layer to everyday financial habits.</em>
-						</p>
-						<p>
-							→ Tinder “Can’t start a fire without a spark”<br>
-							<em>Romantic montage of fire-lit first dates: candles, campfires, cooking dinner, and fireworks—set to the soundtrack “Dancing in the Dark” by Bruce Springsteen</em>
-						</p>
-						<p>
-							→ Spotify Bins<br>
-							<em>An algorithm-free record bin inside Spotify. Browse by cover art. Great for VR, or just crate-digging nostalgia.</em>
-						</p>
-						<p>
-							→ “The Chair” gets vertical<br>
-							<em>Wall-mounted laundry hamper with an edge zone where stuff can hang in between clean and dirty. Functioning like the famous ’bedroom chair’ without the needed floor space. Just tip it in when it’s past the point of no return and needs a cycle.</em>
-						</p>
-						<p>
-							If you want to build one of these, or something like it, send a message. Or just steal it, I'd rather see it out there.
-						</p>
+					<div class="info-main-body">
+						<h2><a href="https://nifty-lemonade-10a.notion.site/Half-baked-Ideas-2186023c5ec280dc84baf481eec6c942" target="_blank">Free Ideas ↗</a></h2>
 					</div>
 				</main>
-
-				<div class="info-background">
-					${workHeroes}
-				</div>
 			</div>
 			
 			<script src="/script.js"></script>
@@ -464,6 +463,7 @@ function generateHTML() {
 		}
 	}
 
+	// Homepage
 	let homeContent = `
 		<!DOCTYPE html>
 		<html lang="en">
@@ -490,16 +490,17 @@ function generateHTML() {
 					color: var(--primary);
 				}
 			</style>
+			<!-- Site developed by No Replica! https://noreplica.com/ -->
 		</head>
 		<body class="light">
 			<div class="home">
-				<h1 class="logo">Josh Balkowski</h1>
+				<h1 class="logo"><a class="logo" href="/">Josh Balkowski</a></h1>
 				<nav class="nav">
 					<a href="/work">Work</a>
 					<a href="/info">Info</a>
 				</nav>
 				<button class="mode-toggle mode-toggle-home" onclick="toggleMode();"></button>
-				<p class="copyright">© ${currentYear}</p>
+				<a class="copyright" href="/credits/">© ${currentYear}</a>
 		
 				<main class="home-background">
 					${homeHeroes}
@@ -514,6 +515,49 @@ function generateHTML() {
 
 	// Create homepage file
 	fs.writeFile(`index.html`, homeContent, err => {
+		if (err) {
+			console.error(err);
+		}
+	});
+
+	// Credit page
+	let creditsContent = `
+		<!DOCTYPE html>
+		<html lang="en">
+		<head>
+			<meta charset="UTF-8">
+			<meta name="viewport" content="width=device-width, initial-scale=1.0">
+			<title>Josh Balkowski | Credits</title>
+			${meta}
+			<link rel="stylesheet" href="/style.css">
+			<!-- Site developed by No Replica! https://noreplica.com/ -->
+		</head>
+		<body class="light">
+			<div class="home">
+				<a class="logo" href="/">Josh Balkowski</a>
+				<nav class="nav">
+					<a href="/work">Work</a>
+					<a href="/info">Info</a>
+				</nav>
+				<button class="mode-toggle" onclick="toggleMode();"></button>
+				<a class="copyright" data-active="1" href="/">© ${currentYear}</a>
+		
+				<main class="credits-main">
+					<h1 class="credits-main-content">
+						<span>Design & Content © ${currentYear} Josh Balkowski</span>
+						<span>Website built by <a href="https://noreplica.com/" target="_blank">No Replica ↗</a></span>
+					</h1>
+				</main>
+			</div>
+			
+			<script src="/script.js"></script>
+			<script src="/home.js"></script>
+		</body>
+		</html>
+	`;
+
+	// Create homepage file
+	fs.writeFile(`./credits/index.html`, creditsContent, err => {
 		if (err) {
 			console.error(err);
 		}
