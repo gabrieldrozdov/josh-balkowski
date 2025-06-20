@@ -383,6 +383,7 @@ body {
 	}
 	.work-projects-filters {
 		padding: 0 20px;
+		gap: 20px;
 	}
 	.work-projects-filters-categories {
 		gap: 15px;
