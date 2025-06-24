@@ -61,6 +61,17 @@ const infoContentColumn3 = `
 	</ul>
 `;
 
+const meta = `
+	<meta name="author" content="Josh Balkowski">
+	<meta name="keywords" content="Branding, Art Direction, Design, Treatments">
+	<meta name="description" content="Josh Balkowski is a Toronto based Art Director and Designer.">
+	<meta property="og:url" content="https://joshbalkowski.com/">
+	<meta name="og:title" property="og:title" content="Josh Balkowski">
+	<meta property="og:description" content="Josh Balkowski is a Toronto based Art Director and Designer.">
+	<meta property="og:image" content="/assets/meta/opengraph.png">
+	<link rel="icon" type="png" href="/assets/meta/favicon.png"></link>
+`;
+
 // ——————————————————————————————————————————————————————
 // SITE GENERATOR CODE
 // DO NOT EDIT!!!
@@ -70,17 +81,6 @@ const fs = require('fs');
 const projects = require('./projects.json');
 
 const currentYear = new Date().getFullYear();
-
-const meta = `
-	<meta name="author" content="Josh Balkowski">
-	<meta name="keywords" content="Branding, Art Direction, Design, Treatments">
-	<meta name="description" content="Josh Balkowski is a Toronto based Art Director and Designer.">
-	<meta property="og:url" content="https://joshbalkowski.com/">
-	<meta name="og:title" property="og:title" content="Josh Balkowski">
-	<meta property="og:description" content="Josh Balkowski is a Toronto based Art Director and Designer.">
-	<meta property="og:image" content="/assets/meta/opengraph.jpg">
-	<link rel="icon" type="png" href="/assets/meta/favicon.png"></link>
-`;
 
 function generateHTML() {
 
@@ -340,6 +340,7 @@ function generateHTML() {
 					<div class="work-projects-filters">
 						<div class="work-projects-filters-categories">
 							${workFiltersHTML}
+							<div class="work-projects-filters-categories-fade"></div>
 						</div>
 						<button class="work-projects-filters-category" data-category="All" onclick="setFilter('All')" data-active="1">All</button>
 					</div>
@@ -348,6 +349,7 @@ function generateHTML() {
 
 					<div class="work-projects-links">
 						${workIndex}
+						<div class="work-projects-links-fade"></div>
 					</div>
 				</main>
 

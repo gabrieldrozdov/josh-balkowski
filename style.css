@@ -280,7 +280,18 @@ body {
 .work-projects-filters-categories {
 	display: flex;
 	gap: 60px;
+	position: relative;
 	overflow: scroll;
+}
+.work-projects-filters-categories-fade {
+	flex-shrink: 0;
+	width: 120px;
+	position: sticky;
+	height: 100%;
+	right: 0;
+	z-index: 1;
+	pointer-events: none;
+	background: linear-gradient(to right, transparent 0%, var(--secondary) 100%);
 }
 .work-projects-filters-categories::-webkit-scrollbar,
 .work-projects-filters-categories::-webkit-scrollbar-button {
@@ -325,11 +336,20 @@ body {
 	margin: 0 80px;
 }
 .work-projects-links {
-	padding: 24px 80px;
+	padding: 24px 80px 80px 80px;
 	display: flex;
 	flex-direction: column;
 	overflow-y: scroll;
 	gap: 20px;
+}
+.work-projects-links-fade {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	height: 80px;
+	background: linear-gradient(to bottom, transparent 0%, var(--secondary) 100%);
+	pointer-events: none;
 }
 .work-projects-link {
 	display: grid;
@@ -887,6 +907,8 @@ body {
 }
 .project-main-item-hover {
 	width: 100%;
+	height: 100%;
+	object-fit: cover;
 }
 .project-main-item-hover-img1 {
 	display: block;
